@@ -1,0 +1,245 @@
+body {
+  background-color: #e9e9f8;
+}
+
+.header-nav {
+  height: 100px;
+  background-color: #1b1b1c;
+  .navbar-brand {
+    color: #fff;
+    font-size: 56px;
+    margin-left: 80px;
+
+    i {
+      margin-right: 10px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.hero-picker {
+  margin-top: 50px;
+  border: 2px solid #1b1b1c;
+  padding: 10px;
+
+  span {
+    margin-right: 8px;
+
+    &.not_active {
+      opacity: 0.4;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.hero-stat {
+  margin-top: 50px;
+  border: 2px solid #1b1b1c;
+  padding: 10px;
+
+  .hero {
+    display: table;
+    border-spacing: 5px;
+
+    & > * {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .star {
+      font-size: 18px;
+      &.first {
+        &:hover {
+          font-weight: 900 !important;
+          color: rgb(224, 224, 37) !important;
+          cursor: default !important;
+        }
+      }
+
+      &.far {
+        color: #1b1b1c;
+
+        &:hover {
+          cursor: pointer;
+          font-weight: 900;
+          color: rgb(224, 224, 37);
+        }
+      }
+
+      &.fas {
+        color: rgb(224, 224, 37);
+
+        &:hover {
+          cursor: pointer;
+          font-weight: 400;
+          color: #1b1b1c;
+        }
+      }
+    }
+  }
+
+  .info {
+    padding-left: 80px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .value-block {
+      i {
+        margin-right: 10px;
+
+        &.fa-heart {
+          color: rgb(245, 40, 13);
+        }
+
+        &.fa-heart-broken {
+          color: rgb(228, 141, 11);
+        }
+      }
+
+      .value {
+        margin-left: 7px;
+      }
+
+      .title {
+        font-weight: 500;
+      }
+    }
+
+    .races {
+      margin-bottom: 15px;
+
+      .race {
+        width: 46px;
+        height: 46px;
+        display: inline-block;
+        border-radius: 50%;
+        background-size: contain;
+        margin-right: 7px;
+        border: 2px solid rgb(201, 24, 24);
+        position: relative;
+
+        .race-count {
+          position: absolute;
+          color: white;
+          font-weight: 600;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.troll {
+          background-image: url(./images/icons/troll.png);
+        }
+
+        &.human {
+          background-image: url(./images/icons/human.png);
+        }
+
+        &.orc {
+          background-image: url(./images/icons/orc.png);
+        }
+
+        &.dragon {
+          background-image: url(./images/icons/dragon.png);
+        }
+
+        &.demon {
+          background-image: url(./images/icons/demon.png);
+        }
+
+        &.ogre {
+          background-image: url(./images/icons/ogre.png);
+        }
+
+        &.naga {
+          background-image: url(./images/icons/naga.png);
+        }
+
+        &.goblin {
+          background-image: url(./images/icons/goblin.png);
+        }
+
+        &.undead {
+          background-image: url(./images/icons/undead.png);
+        }
+
+        &.elf {
+          background-image: url(./images/icons/elf.png);
+          .race-count {
+            color: #1b1b1c;
+          }
+        }
+      }
+    }
+
+    .specs {
+      .spec {
+        width: 46px;
+        height: 46px;
+        display: inline-block;
+        border-radius: 50%;
+        background-size: contain;
+        margin-right: 7px;
+        border: 2px solid rgb(52, 212, 12);
+        position: relative;
+
+        .spec-count {
+          position: absolute;
+          color: white;
+          font-weight: 600;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.priest {
+          background-image: url(./images/icons/priest.png);
+        }
+
+        &.warrior {
+          background-image: url(./images/icons/warrior.png);
+        }
+
+        &.knight {
+          background-image: url(./images/icons/knight.png);
+        }
+
+        &.demonhunter {
+          background-image: url(./images/icons/demonhunter.png);
+        }
+
+        &.mage {
+          background-image: url(./images/icons/mage.png);
+        }
+
+        &.hunter {
+          background-image: url(./images/icons/hunter.png);
+        }
+
+        &.assasin {
+          background-image: url(./images/icons/assasin.png);
+        }
+
+        &.warlock {
+          background-image: url(./images/icons/warlock.png);
+        }
+      }
+    }
+  }
+}
